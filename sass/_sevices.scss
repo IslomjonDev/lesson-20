@@ -1,0 +1,102 @@
+.services {
+    background-color:#F7F6FF;
+}
+.services-content h1 {
+    color: var(--, #333);
+    font-family: Manrope;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 126.316% */
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.services-card1 {
+    max-width: 220px;
+height: 378px;
+flex-shrink: 0;
+border-radius: 15px;
+background: var(--, #FFF);
+
+/* Тень */
+box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.08);
+    span {
+        display: flex;
+        gap: 5px;
+        margin-top: 20px;
+        margin-left: 10px;
+        align-items: center;
+    }
+
+}
+.services-card-header {
+    max-width: 220px;
+    height: 74px;
+    flex-shrink: 0; 
+    border-radius: 15px 15px 0px 0px;
+background: #77B2D3;
+
+/* Тень */
+box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.08);
+    h3 {
+        color: #FFF;
+text-align: center;
+font-family: Manrope;
+font-size: 18px;
+font-style: normal;
+font-weight: 800;
+line-height: 26px; /* 144.444% */
+text-transform: uppercase;
+    }
+}
+.services-card1 h4 {
+    font-family: Manrope;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 24px; /* 80% */ 
+    background: var(--3, linear-gradient(115deg, #F32C6D 10.12%, #CB1D95 100.01%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.services-card-footer {
+    display: flex;
+    margin-top: 40px;
+    gap: 5px;
+    margin-left: 15px;
+    border-top: 1px solid black ;
+}
+.services-card button {
+    margin:20px auto ;
+    color: #FFF;
+    width: 195px;
+height: 54px;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px; /* 162.5% */
+    border-radius: 9px;
+background: linear-gradient(115deg, #F32C6D 10.12%, #CB1D95 100.01%);
+}
+.services-cards {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width:1000px) {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+    }
+    @media (max-width:700px) {
+        display: grid;
+        grid-template-columns:  auto;
+    }
+}
+.services-card button:hover {
+    background:#FFF;
+    color: #CB1D95;
+    border: 1px solid #CB1D95;
+}
+

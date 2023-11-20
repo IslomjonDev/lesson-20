@@ -1,0 +1,138 @@
+body {
+    background-color: #F7F6FF;
+}
+.home {
+    padding-top:  190px ;
+    background-color: #F7F6FF;
+
+.home-content {
+    display: flex;
+    justify-content: space-between;
+    .home-left h1 {
+        max-width:463px;
+        color: var(--, #333);
+font-family: Manrope;
+font-size: 55px;
+font-style: normal;
+font-weight: 500;
+line-height: 65px;
+text-transform: uppercase;
+margin-bottom: 15px;
+span {
+    color:  #333;
+font-family: Manrope;
+font-size: 45px;
+font-style: normal;
+font-weight: 800;
+line-height: 65px; /* 144.444% */
+}
+    }
+  
+        p {
+            
+            color: var(--, #333);
+font-family: Manrope;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 24px; /* 150% */
+        }
+    
+    @media(max-width:900px) {
+        display: block;
+        margin-top: 100px;
+    }
+}
+
+@mixin home-btn ($w:241px) {
+    color:  #FFF;
+font-family: Manrope;
+font-size: 16px;
+font-weight: 600;
+line-height: 26px; /* 162.5% */
+border-radius: 250px;
+background: #77B2D3;
+width: $w;
+height: 54px;
+margin-top: 30px;;
+@media(max-width:900px) {
+    margin-bottom: 30px;
+}
+}
+.home-btn {
+    @include home-btn();
+}
+.home-btn2  {
+    @include home-btn(114px)
+}
+.home-btn3  {
+    @include home-btn(114px)
+}
+.home-left button:hover {
+    color: #22acfc;
+    background-color: #FFF;
+    transition: 0.5s;
+    border: 1px solid  #22acfc;
+}
+.home-right img {
+    width: 100%;
+}
+
+.home-cards-content{
+    padding: 40px 55px;
+    max-width: 1170px;
+    margin: 90px auto;
+flex-shrink: 0;
+border-radius: 20px;
+background: var(--, #FFF);
+box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.08);
+
+    h1 {
+        color: var(--, #333);
+font-family: Manrope;
+font-size: 38px;
+font-style: normal;
+font-weight: 700;
+line-height: 48px; /* 126.316% */
+text-transform: uppercase;
+    }
+    .home-cards{
+        display: flex;
+        justify-content: space-between;
+        .home-card1 {
+            max-width:205px;
+            margin-top: 35px;
+            h2{
+                margin-bottom: 9px;
+                font-family: Manrope;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 48px; /* 120% */
+    background: var(--3, linear-gradient(115deg, #F32C6D 10.12%, #CB1D95 100.01%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+            }
+            p {
+                color: var(--, #333);
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+            }
+        }
+        @media (max-width:900px) {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+        @media (max-width:700px) {
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+        }
+    }
+
+}
+
+}

@@ -1,0 +1,45 @@
+
+header {
+    background-color: #fff;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    box-shadow: 0 0 10px 1px  rgb(178, 178, 252);
+ 
+    
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
+    .nav-link ul {
+        display: flex;
+        gap:20px ;
+        @media (max-width:900px) {
+            margin-bottom: 30px;
+        }
+       a {
+            color: #333;
+            font-family: Manrope;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px; /* 150% */
+        }
+    }
+    .nav-btn button {
+        color: #fff;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px; 
+    width: 205px;
+    height: 54px;
+    border-radius: 9px;
+    background: var(--3, linear-gradient(115deg, #F32C6D 10.12%, #CB1D95 100.01%));
+    }
+    @media (max-width:900px) {
+        display: block;
+    }
+}

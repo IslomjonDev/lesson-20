@@ -1,0 +1,12 @@
+@mixin home-btn ($w:241px) {
+    color:  #FFF;
+font-family: Manrope;
+font-size: 16px;
+font-weight: 600;
+line-height: 26px; /* 162.5% */
+border-radius: 250px;
+background: #77B2D3;
+width: $w;
+height: 54px;
+margin-top: 30px;
+}
